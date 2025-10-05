@@ -62,7 +62,12 @@ Le dashboard pour visualiser les données.
 Le chat IA pour tester l’expérience interactive.
 
 🎨 Aperçu visuel
-![alt text](<Assets/Images/Capture d’écran_3-10-2025_135323_127.0.0.1.jpeg>)
+![page d'acceuil de OptiCash](<Assets/Images/Capture d’écran_3-10-2025_135323_127.0.0.1.jpeg>)
+
+
+
+![le about de OptiCash](<Assets/Images/Capture d’écran (7).png>)
+
 Exemple :
 
 🔮 Améliorations futures

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login_page</title>
+    <link rel="stylesheet" href="/Assets/CSS/login_page.css">
+</head>
+<body>
+      <!-- ==================== Section Login/Register ==================== -->
+    
+    <!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OptiCash | Authentification</title>
+  <link rel="stylesheet" href="assets/CSS/style.css">
+  <link rel="stylesheet" href="assets/CSS/form.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">OptiCash</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="about.html">À propos</a></li>
+      <li><a href="form.html" class="Active">Connexion</a></li>
+    </ul>
+  </nav>
+
+  <!-- SECTION FORMULAIRE -->
+  <section id="auth-section">
+    <div class="auth-container">
+      
+      <!-- Formulaire Connexion -->
+      <div class="auth-card" id="login-form">
+        <h2>Connexion</h2>
+        <form>
+          <label>Email</label>
+          <input type="email" placeholder="exemple@mail.com" required>
+          <label>Mot de passe</label>
+          <input type="password" placeholder="********" required>
+          <button type="submit">Se connecter</button>
+          <p class="switch-text">Pas encore de compte ? <a href="#" id="show-signup">Créer un compte</a></p>
+        </form>
+      </div>
+
+      <!-- Formulaire Inscription -->
+      <div class="auth-card hidden" id="signup-form">
+        <h2>Inscription</h2>
+        <form>
+          <label>Nom complet</label>
+          <input type="text" placeholder="Jean Dupont" required>
+          <label>Email</label>
+          <input type="email" placeholder="exemple@mail.com" required>
+          <label>Mot de passe</label>
+          <input type="password" placeholder="********" required>
+          <label>Confirmer mot de passe</label>
+          <input type="password" placeholder="********" required>
+          <button type="submit">S’inscrire</button>
+          <p class="switch-text">Déjà inscrit ? <a href="#" id="show-login">Se connecter</a></p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="Assets/JS/login_page.js"></script>
+</body>
+</html>
