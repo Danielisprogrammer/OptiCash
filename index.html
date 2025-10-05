@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OptiCash - Gestion des dépenses⚖️</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/Assets/CSS/style.css">
+    <link rel="stylesheet" href="/Assets/CSS/responsive.css">
+    
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header id="navbar">
+        <nav class="navbar">
+            <div class="logo">OptiCash</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="Active">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="#" id="chat-btn">Chat IA</a></li>
+                <li><a href="#" id="nav-login">Login</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <!-- Section Description -->
+    <section id="description">
+        <h1>Gérez vos dépenses intelligemment avec OptiCash💡⚖️</h1>
+        <p>
+            Suivez vos dépenses, optimisez votre budget et préparez-vous à recevoir des recommandations intelligentes grâce à notre futur assistant IA.💰💶
+        </p>
+    </section>
+
+    <!-- Section Formulaire + Dashboard -->
+    <main>
+        <div class="container">
+
+            <!-- Formulaire ajout dépense -->
+            <div class="expense-form">
+                <h2>Ajouter une dépense</h2>
+                <form id="form">
+                    <label for="title">Nom dépense</label>
+                    <input type="text" id="title" placeholder="Ex: Taxi" required>
+
+                    <label for="amount">Montant</label>
+                    <input type="number" id="amount" placeholder="Ex: 2000" required>
+
+                    <label for="date">Date</label>
+                    <input type="date" id="date" required>
+
+                    <label for="category">Catégorie</label>
+                    <input type="text" id="category" placeholder="Ex: Transport">
+
+                    <label for="time">Heure</label>
+                    <input type="time" id="time" required>
+
+                    <button type="submit">Ajouter</button>
+                </form>
+            </div>
+
+            <!-- Dashboard dépenses -->
+            <div class="dashboard">
+                <h2>Liste des dépenses</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Montant</th>
+                            <th>Date</th>
+                            <th>Catégorie</th>
+                            <th>Heure</th>
+                        </tr>
+                    </thead>
+                    <tbody id="expense-list">
+                        <!-- Dépenses ajoutées () -->
+                    </tbody>
+                </table>
+
+                <div class="total">
+                    Total : <span id="total">0</span> CFA
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <!-- ==================== Section Login/Register ==================== -->
+    
+    <section id="login-section" class="hidden">
+        <div class="auth-container">
+            <!-- Formulaire Connexion -->
+            <div class="auth-card" id="login-form">
+                <h2>Connexion</h2>
+                <form>
+                    <label>Email</label>
+                    <input type="email" placeholder="Entrez votre email" required>
+
+                    <label>Mot de passe</label>
+                    <input type="password" placeholder="Entrez votre mot de passe" required>
+
+                    <button type="submit">Se connecter</button>
+                    <p class="switch-text">Pas encore inscrit ? 
+                    <a href="#" id="show-register">Créer un compte</a>
+                    </p>
+                </form>
+            </div>
+
+            <!-- Formulaire Inscription -->
+            <div class="auth-card hidden" id="register-form">
+                <h2>Inscription</h2>
+                <form>
+                    <label>Nom complet</label>
+                    <input type="text" placeholder="Votre nom complet" required>
+
+                    <label>Email</label>
+                    <input type="email" placeholder="Entrez votre email" required>
+
+                    <label>Mot de passe</label>
+                    <input type="password" placeholder="Créez un mot de passe" required>
+
+                    <label>Confirmer le mot de passe</label>
+                    <input type="password" placeholder="Confirmez votre mot de passe" required>
+
+                    <button type="submit">S'inscrire</button>
+                    <p class="switch-text">Déjà un compte ? 
+                    <a href="#" id="show-login">Se connecter</a>
+                    </p>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+
+        <!-- Chat IA flottant -->
+            <div id="chat-container" class="chat-container hidden">
+                <div class="chat-header">
+                    <span>Chat IA</span>
+                    <button id="chat-close">&times;</button>
+                </div>
+                <div id="chat-messages" class="chat-messages">
+                    <!-- Messages dynamiques ici -->
+                </div>
+                <form id="chat-form" class="chat-form">
+                    <input type="text" id="chat-input" placeholder="Écris un message..." required>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 OptiCash. Tous droits réservés.
+    </footer>
+
+    <!-- JS -->
+     <!--👾💰💷💶💴💡👾💰⚖️💷💶💴💡-->
+    <script src="/Assets/JS/animations.js"></script>
+    <script src="/Assets/JS/Application.js"></script>
+    <script src="/Assets/JS/chat.js"></script>
+</body>
+</html>
